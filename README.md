@@ -1,145 +1,126 @@
-AI-Driven Inventory Management System
-📌 Overview
+# AI-Driven Inventory Management System
 
-This project is an AI-driven Inventory Management System designed to forecast product demand and assist businesses in making better inventory decisions.
-Using historical retail sales data, the system predicts future demand, identifies low-stock risks, and recommends reorder quantities.
+## Overview
+This project implements an AI-driven inventory management system that forecasts product demand using historical retail sales data.  
+The goal is to help businesses reduce stock-outs and overstocking by making data-driven inventory decisions.
 
-The project demonstrates an end-to-end Machine Learning workflow, from data cleaning to business insights.
+The project demonstrates a complete **machine learning pipeline**, from data preprocessing to actionable inventory insights.
 
-🎯 Problem Statement
+---
 
-Retail businesses often face challenges such as:
+## Problem Statement
+Retail inventory planning is challenging due to fluctuating demand.  
+Manual estimation often leads to excess inventory or missed sales.
 
-Overstocking (high holding cost)
+This system addresses the problem by:
+- Forecasting future demand
+- Identifying low-stock risk
+- Recommending reorder quantities
 
-Stock-outs (lost sales)
+---
 
-This project uses Machine Learning to:
+## Tech Stack
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- Jupyter Notebook
+- Git & GitHub
 
-Forecast demand
+---
 
-Detect low-stock products
+## Dataset
+- Source: Kaggle (Retail Store Inventory Forecasting Dataset)
+- Data includes:
+  - Date
+  - Product ID
+  - Category
+  - Units Sold
+  - Inventory Level
+  - Price
+  - Discount
 
-Suggest reorder quantities based on predictions
+---
 
-🛠 Tech Stack
-
-Programming Language: Python
-
-Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-
-Tools: Jupyter Notebook, Git, GitHub
-
-ML Model: Linear Regression, Random Forest Regressor
-
-📂 Project Structure
+## Project Structure
 Inventory_Management/
 │
 ├── data/
-│   ├── retail_store_inventory.csv        # Raw dataset
+│ └── retail_store_inventory.csv
 │
 ├── notebooks/
-│   ├── data_cleaning.ipynb
-│   ├── EDA.ipynb
-│   ├── feature_engineering.ipynb
-│   ├── model_training.ipynb
-│   └── inventory_insight.ipynb
+│ ├── data_cleaning.ipynb
+│ ├── EDA.ipynb
+│ ├── feature_engineering.ipynb
+│ ├── model_training.ipynb
+│ └── inventory_insight.ipynb
 │
 ├── .gitignore
 ├── README.md
 
-🔄 Project Workflow
-1️⃣ Data Cleaning
 
-Handled missing values
+---
 
-Removed duplicates
+## Methodology
 
-Converted date columns
+### 1. Data Cleaning
+- Handled missing values
+- Removed duplicates
+- Converted date columns
+- Validated sales and inventory data
 
-Validated sales and inventory values
+### 2. Exploratory Data Analysis (EDA)
+- Sales trend analysis
+- Seasonal demand patterns
+- Category-wise sales distribution
+- Inventory vs sales analysis
 
-2️⃣ Exploratory Data Analysis (EDA)
+### 3. Feature Engineering
+- Time-based features (day, month, weekday)
+- Lag features to capture historical demand
+- Rolling averages to smooth demand trends
+- Encoding categorical variables
 
-Sales trends over time
+### 4. Model Training
+- Linear Regression used as a baseline
+- Random Forest Regressor used for final model
+- Model evaluation using RMSE and R² score
 
-Monthly demand analysis
+### 5. Inventory Insights
+- Demand prediction for each product
+- Low-stock identification
+- Reorder quantity calculation
 
-Top-selling products
+---
 
-Inventory vs sales relationship
+## Results
+- Random Forest achieved better performance than Linear Regression
+- Lag and rolling features significantly improved forecasting accuracy
+- The system successfully generated actionable inventory recommendations
 
-Correlation analysis
+---
 
-3️⃣ Feature Engineering
+## Key Learnings
+- Importance of feature engineering in demand forecasting
+- Handling real-world retail data
+- Translating ML predictions into business insights
+- Using GitHub for version control and project documentation
 
-Time-based features (day, month, weekday)
+---
 
-Lag features (previous demand)
+## Future Enhancements
+- Implement time-series models (ARIMA / LSTM)
+- Build a web-based dashboard
+- Deploy model as an API
+- Automate inventory alerts
 
-Rolling averages for trend capture
+---
 
-Categorical encoding
+## Author
+**Jay Mistry**  
+BSc IT | Aspiring AI/ML Engineer  
 
-4️⃣ Model Training
+GitHub: https://github.com/Mistryjay20/Inventory_Management  
+LinkedIn: www.linkedin.com/in/jaykumar-mistry-7a81a2325
 
-Trained Linear Regression as a baseline model
-
-Trained Random Forest Regressor for non-linear patterns
-
-Evaluated models using RMSE and R² Score
-
-Selected Random Forest as the final model
-
-5️⃣ Inventory Insights
-
-Predicted product demand
-
-Identified low-stock products
-
-Calculated reorder quantities
-
-Generated actionable business insights
-
-📊 Results
-
-Random Forest outperformed Linear Regression
-
-Lag and rolling features significantly improved demand prediction
-
-System successfully identified low-stock risks and reorder needs
-
-💡 Key Learnings
-
-Importance of feature engineering in time-series problems
-
-Handling real-world retail data
-
-Translating ML predictions into business decisions
-
-Version control best practices using Git & GitHub
-
-🚀 Future Improvements
-
-Add time-series models (ARIMA / LSTM)
-
-Build a Flask-based web dashboard
-
-Automate daily demand prediction
-
-Deploy the model as a REST API
-
-👤 Author
-
-Jay Mistry
-BSc IT | Aspiring AI/ML Engineer
-
-🔗 GitHub: https://github.com/Mistryjay20
-
-🔗 LinkedIn: (Add your LinkedIn profile link here)
-
-📌 Acknowledgements
-
-Dataset sourced from Kaggle
-
-Inspired by real-world retail inventory challenges
+---
