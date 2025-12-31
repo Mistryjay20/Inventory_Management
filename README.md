@@ -44,20 +44,8 @@ This system addresses the problem by:
 
 ## Project Structure
 
-- Inventory_Management/
-- │
-- ├── data/
--- │   └── retail_store_inventory.csv        # Raw dataset only
--- │
-- ├── notebooks/
--- │   ├── data_cleaning.ipynb
--- │   ├── EDA.ipynb
--- │   ├── feature_engineering.ipynb
--- │   ├── model_training.ipynb
--- │   └── inventory_insight.ipynb
-- │
-- ├── .gitignore
-- ├── README.md
+<img width="916" height="633" alt="image" src="https://github.com/user-attachments/assets/f29e18c5-b53d-4c88-9825-25aa9285ebdf" />
+
 
 
 ---
