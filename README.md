@@ -43,20 +43,21 @@ This system addresses the problem by:
 ---
 
 ## Project Structure
-Inventory_Management/
-│
-├── data/
-│ └── retail_store_inventory.csv
-│
-├── notebooks/
-│ ├── data_cleaning.ipynb
-│ ├── EDA.ipynb
-│ ├── feature_engineering.ipynb
-│ ├── model_training.ipynb
-│ └── inventory_insight.ipynb
-│
-├── .gitignore
-├── README.md
+
+- Inventory_Management/
+- │
+- ├── data/
+-- │   └── retail_store_inventory.csv        # Raw dataset only
+-- │
+- ├── notebooks/
+-- │   ├── data_cleaning.ipynb
+-- │   ├── EDA.ipynb
+-- │   ├── feature_engineering.ipynb
+-- │   ├── model_training.ipynb
+-- │   └── inventory_insight.ipynb
+- │
+- ├── .gitignore
+- ├── README.md
 
 
 ---
